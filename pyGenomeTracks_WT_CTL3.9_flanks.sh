@@ -21,7 +21,7 @@ OPERATION=$7
 source activate HiCExplorer
 
 pyGenomeTracks --tracks WT_CTL3.9_tracks_${BINNAME}.ini \
-               --outFileName plots/pyGenomeTracks_WT_CTL3.9_${BINNAME}_HS6.pdf \
+               --outFileName plots/pyGenomeTracks_WT_CTL3.9_HS6.pdf \
                --BED Fernandes_TableS_CO_HS_CS_CTL3.9_v300821_HS6.bed \
                --width 40 \
                --dpi 300 \

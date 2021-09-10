@@ -5,7 +5,7 @@
 # From https://pygenometracks.readthedocs.io/en/latest/content/usage.html#pygenometracks
 
 # Usage:
-# ./pyGenomeTracks_WT_CTL3.9_flanks.sh 1kb
+# ./pyGenomeTracks_WT_CTL3.9_flanks.sh 1bp
 
 BINNAME=$1
 SAMPLE1=$1
@@ -20,7 +20,7 @@ OPERATION=$7
 
 source activate HiCExplorer
 
-pyGenomeTracks --tracks WT_CTL3.9_tracks_1kb.ini \
+pyGenomeTracks --tracks WT_CTL3.9_tracks_${BINNAME}.ini \
                --outFileName plots/pyGenomeTracks_WT_CTL3.9_${BINNAME}_HS6.pdf \
                --BED Fernandes_TableS_CO_HS_CS_CTL3.9_v300821_HS6.bed \
                --width 40 \

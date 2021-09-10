@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# pyGenomeTracks version 3.6
+
+# From https://pygenometracks.readthedocs.io/en/latest/content/usage.html#pygenometracks
+
+# Usage:
+# ./pyGenomeTracks_CTL3.9.sh 1bp
+
+BINNAME=$1
+SAMPLE1=$1
+SAMPLE2=$2
+GENOME=$3
+RESOLUTION=$4
+NORM=$5
+CORRECTION=$6
+OPERATION=$7
+
+[ -d plots/ ] || mkdir -p  plots/
+
+source activate HiCExplorer
+
+pyGenomeTracks --tracks WT_CTL3.9_tracks_${BINNAME}.ini \
+               --outFileName plots/CTL3.9_browser_tracks.pdf \
+               --BED Fernandes_TableS_CO_HS_CS_CTL3.9_v300821.bed \
+               --width 40 \
+               --dpi 300 \
+               --title "CTL3.9 hotspot/coldspot"
+
+source deactivate

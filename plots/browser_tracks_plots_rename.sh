@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Rename genome browser track PDFs to include hotspot/coldspot name
+
 mv CTL3.9_browser_tracks_Chr3-9749802-9799635.pdf CTL3.9_browser_tracks_Chr3-9749802-9799635_HS13.pdf
 mv CTL3.9_browser_tracks_Chr3-9799634-9851690.pdf CTL3.9_browser_tracks_Chr3-9799634-9851690_HS14.pdf
 mv CTL3.9_browser_tracks_Chr3-9903199-9958690.pdf CTL3.9_browser_tracks_Chr3-9903199-9958690_HS15.pdf
